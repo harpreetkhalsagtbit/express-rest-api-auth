@@ -5,7 +5,7 @@
 var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 8080;
-// var mongoose = require('mongoose');
+var mongoose = require('mongoose');
 // var passport = require('passport');
 // var flash    = require('connect-flash');
 
@@ -16,10 +16,13 @@ var session      = require('express-session');
 var cors         = require("cors");
 var compression  = require("compression");
 var helmet 		 = require("helmet");
-// var configDB = require('./config/database.js');
+
+var configDB = require('./config/database.js');
 
 // configuration ===============================================================
-// mongoose.connect(configDB.url); // connect to our database
+mongoose.connect(configDB.url, function() {
+	console.log("connected")
+}); // connect to our database
 
 // require('./config/passport')(passport); // pass passport for configuration
 
@@ -53,7 +56,7 @@ app.use(compression());
 // app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
-// require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+require('./app/routes.js')(app/*, passport*/); // load our routes and pass in our app and fully configured passport
 
 app.get("/", function(req, res) {
 	res.json({status: "My API is alive!"});
