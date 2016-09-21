@@ -18,10 +18,12 @@ Express Rest API with API Key Authorization
                 user.js
             routes/
                 beer.js
+                user.js
             auth.js
             routes.js
         config/
           database.js
+          passport.js
         node_modules/
         package.json
         server.js
