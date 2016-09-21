@@ -26,6 +26,7 @@ Express Rest API with API Key Authorization
 
 Ref:
 ------
-1. [Building Restful API - Node](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
-2. [Setting Express](https://blog.jscrambler.com/setting-up-5-useful-middlewares-for-an-express-api/)
-3. [Easy Node Authentication](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens)
+1. [Building Restful API - Node(Scott Smith)](http://scottksmith.com/blog/2014/05/02/building-restful-apis-with-node/)
+2. [Setting Express - jscrambler](https://blog.jscrambler.com/setting-up-5-useful-middlewares-for-an-express-api/)
+3. [Easy Node Authentication - Scotch.io](https://scotch.io/tutorials/authenticate-a-node-js-api-with-json-web-tokens)
+4. [Getting Started and Local Authentication - Scotch.io](http://scotch.io/tutorials/javascript/easy-node-authentication-setup-and-local)
