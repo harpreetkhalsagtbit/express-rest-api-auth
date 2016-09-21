@@ -26,8 +26,8 @@ module.exports = function(apiRoutes) {
 		});
 	});
 
-	// Create endpoint /api/beers for POSTS
-	apiRoutes.post('/', function(req, res) {
+	// Create endpoint /api/beer for POSTS
+	apiRoutes.post('/beer', function(req, res) {
 		var beer = new Beer();
 
 		// Set the beer properties that came from the POST data
