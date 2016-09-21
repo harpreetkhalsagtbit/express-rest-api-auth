@@ -21,8 +21,8 @@ module.exports = function(app, passport) {
     // 
     // Why require here?
     // we need to pass app before loading module
-    require('./routes/beers')(apiRoutes, passport); // load our routes and pass in our app
     require('./routes/user')(apiRoutes, passport); // load our routes and pass in our app and fully configured passport
+    require('./routes/beers')(apiRoutes); // load our routes and pass in our app
     // app.use('/beers', beers(app));
 
     // for dev purposes only

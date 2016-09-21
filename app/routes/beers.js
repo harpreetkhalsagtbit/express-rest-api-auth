@@ -2,7 +2,7 @@ var express = require('express');
 var Beer = require('../models/beer');
 var authController = require('../auth');
 
-module.exports = function(apiRoutes, passport) {
+module.exports = function(apiRoutes) {
 
 	// route middleware to verify a token
 	// apiRoutes.use(function(req, res, next) {
