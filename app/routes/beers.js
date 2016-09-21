@@ -1,7 +1,8 @@
 var express = require('express');
 var Beer = require('../models/beer');
+var authController = require('../auth');
 
-module.exports = function(apiRoutes) {
+module.exports = function(apiRoutes, passport) {
 
 	// route middleware to verify a token
 	// apiRoutes.use(function(req, res, next) {
@@ -16,7 +17,7 @@ module.exports = function(apiRoutes) {
 	});
 
 	// Create endpoint /api/beers for Get
-	apiRoutes.get('/beers', function(req, res) {
+	apiRoutes.get('/beers', authController.isAuthenticated, function(req, res) {
 		// Use the Beer model to find all beer
 		Beer.find(function(err, beers) {
 			if (err)
