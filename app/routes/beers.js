@@ -28,12 +28,12 @@ module.exports = function(apiRoutes) {
 
 	// Create endpoint /api/beer for POSTS
 	apiRoutes.post('/beer', function(req, res) {
-		var beer = new Beer();
-
 		// Set the beer properties that came from the POST data
-		beer.name = req.body.name;
-		beer.type = req.body.type;
-		beer.quantity = req.body.quantity;
+		var beer = new Beer({
+			"name": req.body.name,
+			"type": req.body.type,
+			"quantity": req.body.quantity
+		});
 
 		// Save the beer and check for errors
 		beer.save(function(err) {

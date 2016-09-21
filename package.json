@@ -2,7 +2,7 @@
   "name": "express-rest-api-auth",
   "version": "1.0.0",
   "description": "Express Rest API with API Key Authorization",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,14 +17,19 @@
   },
   "homepage": "https://github.com/harpreetkhalsagtbit/express-rest-api-auth#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
+    "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "cors": "^2.8.1",
     "express": "^4.14.0",
     "express-session": "^1.14.1",
     "helmet": "^2.2.0",
     "mongoose": "^4.6.1",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0"
   }
 }
