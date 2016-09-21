@@ -1,0 +1,29 @@
+{
+  "name": "express-rest-api-auth",
+  "version": "1.0.0",
+  "description": "Express Rest API with API Key Authorization",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harpreetkhalsagtbit/express-rest-api-auth.git"
+  },
+  "author": "harpreetkhalsagtbit@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harpreetkhalsagtbit/express-rest-api-auth/issues"
+  },
+  "homepage": "https://github.com/harpreetkhalsagtbit/express-rest-api-auth#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-session": "^1.14.1",
+    "helmet": "^2.2.0",
+    "morgan": "^1.7.0"
+  }
+}
