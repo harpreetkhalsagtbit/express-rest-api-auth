@@ -37,8 +37,7 @@ module.exports = function(app, passport) {
 
     // process the signup form
     apiRoutes.get('/profile', function(req, res, next){
-        // console.log("res", res)
-        console.log("req", req.user)
+        // console.log("req", req.user)
         res.send({
             logIn:"success"
         })
