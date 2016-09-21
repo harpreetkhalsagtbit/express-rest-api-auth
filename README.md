@@ -15,6 +15,7 @@ Express Rest API with API Key Authorization
         app/
             models/
                 beer.js
+                user.js
             routes/
                 beer.js
             routes.js
