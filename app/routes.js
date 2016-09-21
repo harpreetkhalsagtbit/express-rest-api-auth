@@ -20,7 +20,7 @@ module.exports = function(app, passport) {
     // passing 'app' will reset the prefix
     // 
     // Why require here?
-    // we need to pass app before loading module
+    // we need to pass 'apiRoutes' before loading module(s)
     require('./routes/user')(apiRoutes, passport); // load our routes and pass in our app and fully configured passport
     require('./routes/beers')(apiRoutes); // load our routes and pass in our app
     // app.use('/beers', beers(app));
