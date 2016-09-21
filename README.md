@@ -5,7 +5,7 @@ Express Rest API with API Key Authorization
 1. [✓] Setting App Structure.
 2. [✓] Setting Up Express.
 3. [✓] Basic API CRUD.
-4. [✓] Basic Authentication using [Local Passport](https://github.com/jaredhanson/passport-local).
+4. [✓] Basic Authentication using [Local Passport](https://github.com/jaredhanson/passport-local) and [HTTP Passport](https://github.com/jaredhanson/passport-http).
 5. [✓] Authorization - API Key.
 
 
