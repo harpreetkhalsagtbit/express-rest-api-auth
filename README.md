@@ -1,6 +1,13 @@
 # express-rest-api-auth
 Express Rest API with API Key Authorization
 
+# Road Map
+1. [✓] Setting App Structure.
+2. [✓] Setting Up Express.
+3. [✓] Basic API CRUD.
+4. [] Authorization - API Key.
+
+
 #Application Structure
 
     RootFolder/
