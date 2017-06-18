@@ -50,7 +50,15 @@ app.use(compression());
 // app.set('view engine', 'ejs'); // set up ejs for templating
 
 // required for passport
-app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+app.use(session({
+	secret: 'web-url-magaer-secret',
+	resave: false,
+	saveUninitialized: true,
+	cookie: {
+		secure: true
+	}
+}))
+// app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
 app.use(passport.initialize());
 app.use(passport.session()); // persistent login sessions
 app.use(flash()); // use connect-flash for flash messages stored in session
